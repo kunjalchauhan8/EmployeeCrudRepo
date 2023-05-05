@@ -18,6 +18,10 @@ This Demo Contains API for the Employee and Skills services.
 * For the API information use below URL after application will start. 
     * ### http://localhost:8080/swagger-ui/index.html
 
+* For h2 console use below URL after application will start. 
+    * ### http://localhost:8080/h2/
+     login credential : admin/admin
+    
 ### Guides
 
 The following guides illustrate how to use some features concretely:
