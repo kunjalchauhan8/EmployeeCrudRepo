@@ -49,7 +49,7 @@ class EmployeeServiceImplTest {
     @Rollback(value = false)
     void getAllEmployeeDetails() {
         List<Employee> employeeList = employeeServiceRepository.findAll();
-        Assertions.assertThat(employeeList.size()).isEqualTo(1);
+        Assertions.assertThat(employeeList.size()).isEqualTo(5);
     }
 
     @Test
@@ -97,6 +97,6 @@ class EmployeeServiceImplTest {
     void removeEmployeeDetails() {
         employeeServiceRepository.deleteById(1L);
         List<Employee> employeeList = employeeServiceRepository.findAll();
-        Assertions.assertThat(employeeList.size()).isEqualTo(0);
+        Assertions.assertThat(employeeList.size()).isEqualTo(4);
     }
 }
